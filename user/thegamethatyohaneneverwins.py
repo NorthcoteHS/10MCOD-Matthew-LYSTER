@@ -1,6 +1,6 @@
 player = input("Rock, Paper, or Scissors? (choose wisely): ")
-cheateroptions = ["Rock", "Paper", "Scissors"]
-cheater = cheateroptions[randint(0, 2)]
+cheaterOptions = ["Rock", "Paper", "Scissors"]
+cheater = cheaterOptions[randint(0, 2)]
 if (player) == "Rock":
     if (cheater) == "Rock":
         print("It would appear that we have made the same choice")

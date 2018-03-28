@@ -22,8 +22,8 @@ if answers == 8:
     print ("I hate to be boring, but Yes")
 if answers == 9:
     print ("I have never been so certain that something is going to work out perfectly")
-thisthing = 1
-while thisthing == 1:
+thisThing = 1
+while thisThing == 1:
     question = input("Anything else you would like to ask the oh so wise and superior ball of the 8 variety? ")
     from random import randint
     answers = (randint(0, 9))
