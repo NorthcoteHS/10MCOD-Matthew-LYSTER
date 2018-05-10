@@ -105,6 +105,6 @@ if thisThing == 9:
     if score < 5:
         print("Done! You got " + str(score) + " answer(1) correct! I reckon you could do a bit better though :)")
     if 4 < score < 9:
-        print("Well that's it! Well done, you got " + str(score) + "questions right! That's a pretty decent score!")
+        print("Well that's it! Well done, you got " + str(score) + " questions right! That's a pretty decent score!")
     if score == 9:
         print("That's all mate! Fastastic $#!+ you got 9 out of 9 correct!")
