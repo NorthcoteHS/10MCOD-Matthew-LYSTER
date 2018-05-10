@@ -23,7 +23,10 @@ if thisThing == 0:
     if question1 != (answer[0]):
         print("Oof not quite.")
     thisThing = thisThing + 1
+
+#waits for 2 seconds before asking the next question
 time.sleep(2)
+
 if thisThing == 1:
     question2 = input(question[1])
     if question2 == (answer[1]):
