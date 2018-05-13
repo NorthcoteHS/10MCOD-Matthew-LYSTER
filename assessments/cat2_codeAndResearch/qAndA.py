@@ -2,10 +2,10 @@
 import time
 
 #create a list of all the questions
-question = ["How many episodes of No Game No Life are there currently? ", "What do Sora and Shiro call themselves? ", "What is the opening theme to No Game No Life called? ", "In the beginning scene of episode 1, how many was the highest amount of mmorpg characters Sora was playing at once? ", "Were there any references to Jojo's Bizarre Adventure in NGNL? ", "Were there any references to Ace Attorney in NGNL? ", "Were there any references to Spirited Away in NGNL? ", "What was the name of the main Flugel in NGNL? ", "What was the result of the coin toss in episode 12 with the leader of the Werebeasts?(win/loss/draw)? "]
+question = ["How many episodes of No Game No Life are there currently? ", "What do Sora and Shiro call themselves? ", "What is the opening theme to No Game No Life called? ", "In the beginning scene of episode 1, how many was the highest amount of mmorpg characters Sora was playing at once? ", "Were there any references to Jojo's Bizarre Adventure in NGNL? ", "Were there any references to Ace Attorney in NGNL? ", "Were there any references to Spirited Away in NGNL? ", "What was the name of the main Flugel in NGNL? ", "What was the result of the coin toss in episode 12 with the leader of the Werebeasts?(win/loss/draw)? ", "bonus: are we going to get a season 2 of NGNL anytime soon? "]
 
 #and another list with all the answers, in corresponding positions with their questions
-answer = ["12", "blank", "this game", "4", "yes", "yes", "no", "jibril", "draw"]
+answer = ["12", "blank", "this game", "4", "yes", "yes", "no", "jibril", "draw", "no"]
 
 #welcome message
 print("Hey ya shmuck! If you've come here to do something useful with your time you've come to the wrong place. This a 'No Game No Life' trivia thingy (easy tho). Make sure not to use any capital letters in your answers ^^")
@@ -18,7 +18,7 @@ score = 0
 if thisThing == 0:
     question1 = input(question[0])
     if question1 == (answer[0]):
-        print("Yup that's right. If you know NGNL you'll know that we will probably never get a season 2 (no matter how much a season 2 is needed)")
+        print("Yup that's right. Good start ^^")
         score = score + 1
     if question1 != (answer[0]):
         print("Oof not quite.")
@@ -99,12 +99,21 @@ if thisThing == 8:
         print("Nope. If only it were that simple...")
     thisThing = thisThing + 1
 time.sleep(2)
+if thisThing == 9:
+    question10 = input(question[9])
+    if question10 == (answer[9]):
+        print("...Sadly... you are right DX. And we will probably never get a season 2 :P (no matter how much a season 2 is needed :/)")
+        score = score + 1
+    if question10 != (answer[9]):
+        print("As much as I'd love to say you are correct, we will probably never get a season 2 :/")
+    thisThing = thisThing + 1
+time.sleep(2)
 
 #displays a concluding message, telling people what score they got with different responses based on how many questions they got right
-if thisThing == 9:
+if thisThing == 10:
     if score < 5:
         print("Done! You got " + str(score) + " answer(1) correct! I reckon you could do a bit better though :)")
-    if 4 < score < 9:
+    if 4 < score < 10:
         print("Well that's it! Well done, you got " + str(score) + " questions right! That's a pretty decent score!")
-    if score == 9:
-        print("That's all mate! Fastastic $#!+ you got 9 out of 9 correct!")
+    if score == 10:
+        print("That's all mate! Fastastic $#!+ you got 10 out of 10 correct!")
