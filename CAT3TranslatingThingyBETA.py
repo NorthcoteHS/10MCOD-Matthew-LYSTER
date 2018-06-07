@@ -1,3 +1,10 @@
+"""
+Prog: CAT3TranslatingThingyThatProbablyDoesntWork.py
+Name: Matthew Lyster
+Date: 7/6/18
+Desc: A program that takes some of the most common phrases in japanese (hiragana/romaji) and accurately translates them into english.
+"""
+
 thisThing = input("What common japanese phrase would you like translated?(enter in HIRAGANA/ROMAJI): ")
 thisThing = thisThing.lower()
 
