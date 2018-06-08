@@ -122,5 +122,7 @@ if thisThing in youkai:
 yume = ["yume", "ゆめ"]
 if thisThing in yume:
     print("yume: dream.")
+"""
 else:
     print("sorry, I can't translate that :(    try again. (make sure you don't use any kanji, punctuation, or unnecessary spaces)")
+"""
